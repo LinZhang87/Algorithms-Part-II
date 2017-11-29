@@ -42,4 +42,8 @@ public class WeightedQuickUnionPathCompressionUF {
 			count--;
 		}
 	}
+	//Return the number of vertices of the connected component that contains p
+	public int componentSize(int p) {
+		return size[find(p)];
+	}
 }
