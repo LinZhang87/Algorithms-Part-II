@@ -18,8 +18,7 @@ public class UnionFindSearch implements Search{
 		return uf.connected(sourceVertex, v);
 	}
 	//Return the number of vertices that are connected to source vertex s
-	//s is not considered to be connected with itself, hence -1
 	public int count() {
-		return uf.componentSize(sourceVertex) - 1;
+		return uf.componentSize(sourceVertex);
 	}
 }
